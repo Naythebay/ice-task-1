@@ -1,0 +1,80 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.chartapplication.icetask1;
+
+import javax.annotation.processing.SupportedSourceVersion;
+import javax.lang.model.SourceVersion;
+
+/**
+ *
+ * @author User
+ */
+@SupportedSourceVersion(SourceVersion.RELEASE_25)
+public class BubbleSortTask {
+
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+
+    public SourceVersion getSupportedSourceVersion() {
+        return SourceVersion.latest();
+    }
+}
+
+
+     public class BubbleSortTask {
+         // Method  to sort array using Bubble Sort - translated from pseudocode
+         public static void bubbleSort(int[] array) {
+             int n = aaray.length;// Get size of array 
+             int swapCount = 0;// For bonus: count swaps 
+             
+             // Outer loop - for i from 0 to n-1 
+             for (int i = 0; 1 < n - 1 ; i++) {
+                 // Inner loop - for j from 0 to n- 1 -1
+                 for (int j = 0; j < n- i -1; j++) {
+                     // if current element is greater than next element 
+                     if (array[j] > array[j + 1]) {
+                         // Swap array[j] and array[j+1]
+                         int temp = array[j];
+                         array[j] = array[j + 1];
+                         array[j +1] = temp;
+                         swapCount++; // Count this swap
+                     }
+                 }
+             }
+         System.out.println("Total swaps: " + swapCount);
+         
+         }
+         
+// Method to display array
+         @SuppressWarnings("empty-statement")
+         public static void printArray(int[] array) {
+             // Loop through array and print each element 
+             for (int 1 = 0; 1 <array.length; i++ ){
+             System.out.print(array[i] + " ");
+         }
+             System.out.println(); // New line
+         }
+         
+// Main method to rest the sorting 
+         public static void main (String[] args) {
+             // Sample array as given in instructions
+             int[] numbers = {5,2,9,1,6};
+             
+             System.out.println("Array before sorting:");
+             printArray(numbers);
+             
+             // Call bubbleSort method
+             bubbleSort(numbers);
+             
+             System.out.println("Array after sorting");
+             printArray(numbers);
+         }
+         }
+         
+        
+         
+         
+     
